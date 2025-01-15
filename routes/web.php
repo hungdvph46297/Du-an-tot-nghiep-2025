@@ -16,3 +16,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('client.index');
 });
+Route::get('/admin', function () {
+    return view('admin.dashboard');
+});
+Route::get('/admin/product-list', function () {
+    return view('admin.product-list');
+});
+Route::get('/admin/add-product', function () {
+    return view('admin.add-product');
+});
